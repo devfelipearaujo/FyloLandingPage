@@ -1,0 +1,126 @@
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+
+body {
+    width: 88%;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    font-size: 2.3rem;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.header__box {
+    margin: 3rem 0 6rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu {
+    
+}
+
+.header__menu a {
+    text-decoration: none;
+    color: hsl(243, 87%, 12%);
+    margin-left: 2rem;
+    font-weight: 500;
+}
+
+.main__box1 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20rem;
+}
+
+.box1__text {
+    width: 50%;
+}
+
+.box1__text p {
+    margin: 1rem 0;
+    padding-right: 75px;
+    font-weight: 500;
+    line-height: 1.3em;
+}
+
+.box1__image {
+    width: 50%;
+}
+
+.input__box1 {
+    display: flex;
+}
+
+.main__input {
+    box-sizing: border-box;
+    padding: 0.7rem 1rem;
+    width: 48%;
+}
+
+.box1__btn {
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    background-color: hsl(224, 93%, 58%);
+    color: #ffffff;
+    margin-left: 3%;
+    width: 32%;
+    padding: 0.7rem 0;
+    cursor: pointer;
+}
+
+.box1__btn:hover {
+    background-color: hsla(224, 93%, 58%, 0.596);
+}
+
+.main__box2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.box2__text {
+    width: 60%;
+}
+
+.box2__text p {
+    margin: 1.5rem 0;
+    font-weight: 500;
+    padding-right: 190px;
+}
+
+.box2__text a {
+    text-decoration: none;
+    display: flex;
+    color:hsl(170, 45%, 43%) ;
+    /* text-underline-offset: 5px; */
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    padding-bottom: 5px;
+    width: 23%;
+}
+
+.link__arrow {
+    background-image: url(../images/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: 18px;
+    width: 13px;
+    margin-left: 5px;
+}
+
+.box2__image {
+    width: 40%;
+}
