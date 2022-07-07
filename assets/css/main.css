@@ -1,19 +1,13 @@
-/* .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); } */
 /* font-family: 'Open Sans', sans-serif; */
 /* font-family: 'Raleway', sans-serif; */
 
-main, header {
+main {
     width: 88%;
     margin: 0 auto;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-}
-
-header {
-    font-family: 'Raleway', sans-serif;
 }
 
 h2 {
@@ -25,24 +19,6 @@ h2 {
 h3 {
     font-size: 1.8rem;
     font-weight: bold;
-}
-
-.header__box {
-    margin: 3rem 0 6rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__menu {
-    
-}
-
-.header__menu a {
-    text-decoration: none;
-    color: hsl(243, 87%, 12%);
-    margin-left: 2rem;
-    font-weight: 500;
 }
 
 .main__box1 {
@@ -79,6 +55,7 @@ p {
     box-sizing: border-box;
     padding: 0.7rem 1rem;
     width: 48%;
+    text-align: center;
 }
 
 .box1__btn, .footer__btn {
@@ -106,20 +83,58 @@ p {
     width: 60%;
 }
 
-.box2__text p {
+.box2__p {
+    color: hsl(0, 0%, 45%);
     margin: 1.5rem 0;
     font-weight: 500;
     padding-right: 190px;
 }
 
-.box2__text a {
+.box2__link {
     text-decoration: none;
     display: flex;
     color:hsl(170, 45%, 43%) ;
     /* text-underline-offset: 5px; */
     border-bottom: 1px solid hsl(170, 45%, 43%);
     padding-bottom: 5px;
-    width: 23%;
+    width: 164px;
+}
+
+.depoimento {
+    padding: 2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    box-shadow: 3px 1px 10px #c4c4c4;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    background-color: rgb(247, 247, 247); 
+    width: 37%; 
+    font-size: 0.8rem; 
+    margin-bottom: 5rem;
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.autor__icon {
+    background-image: url(../images/avatar-testimonial.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.autor__id p:first-child {
+    font-weight: bold;
+}
+
+.autor__id p:last-child {
+    font-size: 0.7rem;
 }
 
 .link__arrow {
@@ -136,40 +151,87 @@ p {
     width: 40%;
 }
 
-.footer__box1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem 6%;
-    background: hsl(238, 22%, 44%);
+.quote__icon {
+    background-image: url(../images/icon-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: 13px;
+    width: 12px;
+    margin-bottom: 1em;
 }
 
-.early__acess__text {
-    width: 42%;
-    color: #ffffff;
-}
+/* Mobile-Section */
 
-.early__acess__text p {
-    margin: 1.5rem 0;
-    font-weight: 500
-}
+@media (max-width: 1100px) {
+    .main__box1 {
+        flex-direction: column;
+        margin-bottom: 10rem;
+        text-align: center;
+    }
 
-.input__box2 {
-    display: flex;
-    flex-direction: column;
-    width: 38%;
-}
+    .box1__image {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
 
-.footer__input {
-    width: 100%;
-}
+    .box1__text {
+        width: 100%;
+    }
 
-.footer__btn {
-    margin-left: 0;
-    margin-top: 10px;
-    width: 40%;
-}
+    .box1__text p {
+        margin: 1rem 0;
+        font-size: 0.9rem;
+        padding-right: 1px;
+        font-weight: 500;
+    }
 
-.footer__btn:hover {
-    background-color: hsl(224, 80%, 72%);
+    h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .input__box1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .box1__btn {
+        width: 100%;
+        margin-left: 0;
+        width: 60%;
+    }
+
+    .main__box2 {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .box2__image {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .box2__text {
+        width: 100%;
+    }
+
+    .box2__p {
+        padding-right: 0;
+    }
+
+    .box2__link {
+        margin: 0 auto;
+    }
+
+    .depoimento {
+        width: 70%;
+        margin: 4rem auto 5rem auto;
+    }
 }

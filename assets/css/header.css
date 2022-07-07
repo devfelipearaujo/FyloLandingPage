@@ -1,0 +1,35 @@
+header {
+    width: 88%;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header__logo {}
+
+.header__box {
+    margin: 3rem 0 6rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header__menu a {
+    text-decoration: none;
+    color: hsl(243, 87%, 12%);
+    font-weight: 500;
+    margin-left: 2rem;
+}
+
+/* Mobile-Section */
+
+@media (max-width: 1100px) {
+    .header__logo {
+        width: 30%;
+    }
+
+    .header__menu a {
+        font-size: 0.8rem;
+        margin-left: 1rem;
+    }
+}
